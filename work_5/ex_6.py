@@ -1,5 +1,5 @@
 import random
-number = random.randint(0,100)
+number = random.randint(0, 100)
 def comparison(a, b, text_true, text_false):
     if a > b:
        print(text_true)
