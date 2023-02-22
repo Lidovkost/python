@@ -1,19 +1,21 @@
-class Error:
-    def __init__(self):
-        self.num_list = []
+class TypeErorr(Exception):
+    def __init__(self, *args):
+        self.message = args[0] if args else None
+    def __str__(self):
+        return f"Ошибка: {self.message}"
 
-    def input_num(self):
-        value = None
-        while True:
-            value = input(f"input numbers or 'stop' to exit - ")
-            if value == 'stop':
-                print(*self.num_list, sep = '\n')
-                return
-            try:
-                int(value)
-                self.num_list.append(value)
-            except:
-                print(f"Недопустимое значение")
-                
-try_except = Error()
-try_except.input_num()
+numbers_list = []
+
+while True:
+    i_num = input("Ввести число или stop для выхода: ")
+    if i_num == 'stop':
+        break
+    try:
+        if i_num.isnumeric() == False:
+            raise TypeErorr
+        i_num = int(i_num)
+        numbers_list.append(i_num)
+    except TypeErorr:
+        print(TypeError(f"{i_num} - не число "))
+print(numbers_list)
+

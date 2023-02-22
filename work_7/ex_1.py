@@ -10,5 +10,5 @@ class TrafficLight:
         print(self.__color[i + 2])
         time.sleep(7)
 
-trafficLight1 = TrafficLight()
-trafficLight1.running()
+traffic_light = TrafficLight()
+traffic_light.running()
