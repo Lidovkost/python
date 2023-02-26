@@ -1,0 +1,9 @@
+items:
+- car
+- potato
+- train
+items price:
+  1000ˆ: train
+  120ˆ: car
+  1ˆ: potato
+items quanity: 3
