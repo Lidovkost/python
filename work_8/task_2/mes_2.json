@@ -1,0 +1,25 @@
+{
+    "orders": [
+        {
+            "buyer": "kostya",
+            "date": "2023-02-25-08.33.50",
+            "item": "pelmeni",
+            "price": 1200.0,
+            "quantity": 1000
+        },
+        {
+            "buyer": "kostya",
+            "date": "2023-02-25-08.34.56",
+            "item": "potato",
+            "price": 1223.0,
+            "quantity": 123
+        },
+        {
+            "buyer": "kostya",
+            "date": "2023-02-25-08.35.17",
+            "item": "chocolate",
+            "price": 666.0,
+            "quantity": 777
+        }
+    ]
+}
