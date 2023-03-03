@@ -9,6 +9,17 @@
 --- обязательно!!! усложните задачу, "отловив" исключение,
 придумайте как это сделать
 # """
-texts = [b"attribute", "класс", "функция", b"type"]
+
+#
+# Определить, какие из слов «attribute», «класс», «функция», «type» невозможно записать в байтовом типе.
+
+texts = ["attribute", "класс", "функция", "type"] 
+for text in texts:
+    try:
+        if text.isascii():
+            continue
+        raise SyntaxError(text)
+    except SyntaxError:
+        print(f"{text} - error, bytes can only contain ASCII literal characters.")
 
 

@@ -11,7 +11,8 @@
 --- используйте списки и циклы, не дублируйте функции
 """
 
-text1, text4, text3 =  b"class", b"function", b"method"
-print(text3) 
-print(type(text3))
-print(len(text3))
+texts =  [b"class", b"function", b"method"]
+print(texts)
+for item in texts:
+    print(type(item))
+    print(len(item))
